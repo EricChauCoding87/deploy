@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/destination.css' %}"/>
+</head>
+<body>
+    <a href="/logout" class="link1">Logout</a>
+    <a href="/travels" class="link2">Home</a><br><br>
+    <h1>{{ destination.destination }}</h1><br>
+    <h3>Planned By: {{ user.full_name }}</h3>
+    <h3>Description:{{ destination.description }}</h3>
+    <h3>Travel Date From:{{ destination.travel_date_from }}</h3>
+    <h3>Travel Date To: {{ destination.travel_date_to }}</h3><br><br>
+    <h1>Other Users Joining The Trip:</h1>
+    {% for x in trips %}
+    <h3>{{ x.full_name }}</h3>
+    {% endfor %}

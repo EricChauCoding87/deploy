@@ -1,0 +1,11 @@
+.link{
+    margin-left: 1000px;
+}
+tr:nth-child(even) {
+    background-color: #b9b9b9;
+}
+.table{
+    border-style: double;
+    overflow-y: scroll;
+    width: 650px;
+}

@@ -1,0 +1,6 @@
+.link1, .link2{
+    display: inline-block;
+}
+.link1{
+    margin-left: 900px;
+}

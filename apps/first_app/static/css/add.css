@@ -1,0 +1,21 @@
+.link1, .link2{
+    display: inline-block;
+}
+.link2{
+    margin-left: 900px;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    border-style: double;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 300px;
+    background-color: rgb(255, 246, 233)
+}
+.BTN{
+    border: none;
+    background-color: rgb(75, 75, 255);
+    color: white;
+    margin-left: 700px;
+}

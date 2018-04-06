@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/add.css' %}"/>
+</head>
+<body>
+    <a href="/logout" class="link1">Logout</a>
+    <a href="/travels" class="link2">Home</a>
+    <h1>Add A Trip</h1><br><br>
+    <div class="box">
+        <form action="/process_add" method="POST">
+            {% csrf_token %}
+            <label>Destination:</label>
+            <input type="text" name="DSTNTN"><br><br>
+            <label>Description:</label>
+            <input type="text" name="DESC"><br><br>
+            <label>Travel Date From:</label>
+            <input type="date" name="FROM"><br><br>
+            <label>Travel Date To:</label>
+            <input type="date" name="TO"><br><br>
+            <input type="submit" value="Add" class="BTN">
+        </form>
+    </div>
+    {% if messages %}
+    <div id='messages'>
+        <ul class>
+            {% for message in messages %}
+            <li>{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</body>
+</html>

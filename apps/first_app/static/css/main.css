@@ -1,0 +1,28 @@
+.regi, .logi{
+    display: inline-block;
+    margin-left: 25px;
+}
+.welcome{
+    margin-left: 300px;
+}
+.box1{
+    width: 400px;
+    height: 400px;
+    border-style: double;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 300px;
+    background-color: rgb(255, 246, 233)
+}
+    .fm1, .fm2{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+.box2{
+    width: 400px;
+    height: 400px;
+    border-style: double;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(255, 246, 233)
+}
